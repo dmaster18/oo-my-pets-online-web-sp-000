@@ -48,7 +48,7 @@ class Owner
     cats.map{|cat|cat.mood = "happy"}
   end
   
-  def
+  def sell_pets
   
   
 end
