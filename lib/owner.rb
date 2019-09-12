@@ -40,7 +40,7 @@ class Owner
   
   def buy_dog(name)
     purchased_dog = Dog.all.find{|dog|dog if dog.name == name}
-    purchased_dog.owner = 
+    purchased_dog.owner = self
     dogs << purchased_dog
   end
     
