@@ -37,9 +37,7 @@ class Owner
   end
   
   def buy_dog(name)
-    purchased_dog = Dog.all.find{|dog| dog.name == name}
-    purchased_dog.owner = self
-    dogs
+    purchased_cat = Cat.new(name, owner = self)
   end
     
 end
