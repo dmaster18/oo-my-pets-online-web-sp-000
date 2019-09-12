@@ -53,7 +53,6 @@ class Owner
     cats.map{|cat|cat.mood = "nervous"}
     dogs.map{|dog|dog.owner = nil}
     cats.map{|cat|cat.owner = nil}
-    
   end
   
   def list_pets
