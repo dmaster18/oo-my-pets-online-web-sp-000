@@ -36,6 +36,7 @@ class Owner
     purchased_cat = Cat.all.find{|cat| cat.name == name}
     purchased_cat.owner = self
     cats << purchased_cat
+    cats
   end
   
   def buy_dog(name)
