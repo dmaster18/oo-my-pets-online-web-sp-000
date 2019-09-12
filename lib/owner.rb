@@ -38,7 +38,7 @@ class Owner
   end
   
   def buy_dog(name)
-    purchased_dog = Dog.all.find{|dog|dog if dog.name == name && dog.owner != self}
+    purchased_dog = Dog.all.find{|dog|dog if dog.name == name}
     purchased_dog.owner = self
   end
     
